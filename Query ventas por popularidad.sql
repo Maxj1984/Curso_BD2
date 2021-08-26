@@ -34,4 +34,5 @@ group by year(b.fecha)
 group by a.id_codigo_producto
 order by count(b.id_cliente) desc;
 
-select * from vw_volumen_ventas_popularidad;
+select * from vw_volumen_ventas_popularidad
+where año=2021;
