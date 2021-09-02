@@ -24,7 +24,7 @@ JOIN
 	opr_marca m ON b.id_marca = m.id_marca_producto
 JOIN 
 	cc_factura_encabezado c ON a.id_factura_encabezado=c.id_factura_encabezado
-WHERE year(c.fecha) = 2021
+WHERE year(c.fecha) = 2020
 GROUP BY codigo_producto
 ORDER BY nombre_producto
 ;
